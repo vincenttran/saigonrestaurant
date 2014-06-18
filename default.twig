@@ -1,0 +1,48 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<header class="bk-header clearfix">
+      <div class="headerwrapper">
+        <div class="logo-container">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        </div>
+        <div class="textwidget">
+            {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+        </div>
+       </div>
+  </header>
+
+  <div class="feature-container">
+    {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+</div>
+<div class="textbox">
+    {{widget('content', 'textwidgetbox1', {content: '<h4>FOR BOOKINGS PLEASE CALL: 01934 418388 </h4>', lines: 'all'})|raw}}
+</div>  
+
+<div class="page-wrap">
+
+<div class="mainzone headerwrapper">
+    {{zone('main')|raw}}
+</div>
+
+</div>
+
+<div class="widgetfooter clearfix">
+    <div class="headerwrapper">
+        <h2 style="text-align:center;width: 70%;margin: 0 15%;">         Authentic Chinese and Cantonese Restaurant
+        </h2>
+            <h4 style="text-align:center;width: 70%;margin: 0 15%;">
+                Fully  licensed premise you will always receive a quality service in an ambience second to none in the Weston-super-Mare area, at the Saigon Chinese Restaurant the number of regular customers is a tribute to the very highest standards of food.
+            </h4>
+    </div>
+</div>
+
+<footer class="bk-footer">
+     <div class="footer-border headerwrapper">
+        {{widget('contactform', 'thisunqiuewidgetname1', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+     </div>
+</footer>
+
+{% endblock %}
