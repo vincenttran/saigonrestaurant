@@ -9,18 +9,11 @@
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
         </div>
         <div class="textwidget">
-            {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+            {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
         </div>
        </div>
-  </header>
-
-  <div class="feature-container">
-    {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
-</div>
-<div class="textbox">
-    {{widget('content', 'textwidgetbox1', {content: '<h4>FOR BOOKINGS PLEASE CALL: 01934 418388 </h4>', lines: 'all'})|raw}}
-</div>  
-
+  </header> 
+  
 <div class="page-wrap">
 
 <div class="mainzone headerwrapper">
@@ -31,17 +24,26 @@
 
 <div class="widgetfooter clearfix">
     <div class="headerwrapper">
-        <h2 style="text-align:center;width: 70%;margin: 0 15%;">         Authentic Chinese and Cantonese Restaurant
-        </h2>
-            <h4 style="text-align:center;width: 70%;margin: 0 15%;">
+        <h3 style="text-align:center;width: 70%;margin: 0 15%;">
+            Authentic Chinese and Cantonese Restaurant
+        </h3>
+            <p style="text-align:center;width: 70%;margin: 0 15%;">
                 Fully  licensed premise you will always receive a quality service in an ambience second to none in the Weston-super-Mare area, at the Saigon Chinese Restaurant the number of regular customers is a tribute to the very highest standards of food.
-            </h4>
+            </p>
     </div>
+</div>
+
+<div class="map-section">
+     <div class="footer-border headerwrapper">
+     <h3 style="text-align:center;width: 70%;margin: 0 15%;">Where To Find Us</h3>
+     <p style="text-align:center;width: 70%;margin: 0 15%;">36 Boulevard, Weston-Super-Mare, BS23 1NF</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d622.9444554490984!2d-2.974851!3d51.350236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871f8d5e1038af3%3A0x24190a56cb77d19a!2sSaigon!5e0!3m2!1sen!2suk!4v1403094385565" width="800" height="350" frameborder="0" style="border:0"></iframe>
+     </div>
 </div>
 
 <footer class="bk-footer">
      <div class="footer-border headerwrapper">
-        {{widget('contactform', 'thisunqiuewidgetname1', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+        <p style="text-align:center;width: 70%;margin: 0 15%;">Copyright 2014. The Saigon Restaurant</p>
      </div>
 </footer>
 

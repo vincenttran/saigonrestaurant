@@ -70,7 +70,7 @@ header.bk-header {
 	margin-top:45px;
 }
 
-#textwidgetbox1 .bk-content-text p {
+#textwidgetbox1 .bk-content-text h3 {
 	font-family:@font-swatch10-font-family; 
 	font-weight: @font-swatch10-font-weight; 
 	color:@font-swatch10-color; 
@@ -105,17 +105,13 @@ header.bk-header {
 .textbox {
 	background-color:@color-swatch3;
 	text-align:center;
-	padding:30px 0px;
+	padding:30px 0px 25px 0px;
 	border-top: 5px solid rgba(0, 0, 0, 0.06); 
 }
 
 /*	===============================
 	FEATURE
 	=============================== */
-
-.widget.feature .feature-bgimg .content {
-	background-color: rgba(0, 0, 0, 0.2);
-}
 
 .widget.feature h2, .widget.feature h3 {
 	color:@font-swatch7-color;
@@ -164,7 +160,7 @@ header.bk-header {
 }
 
 .widget .extendednavigation ul li.folder:after {
-	border-top-color:lighten(@color-swatch3,15%);
+	border-top-color:@font-swatch6-color
 }
 
 .widget .extendednavigation ul li a {
@@ -215,6 +211,15 @@ header.bk-header {
 	padding-bottom:25%;
 }
 
+.widget.feature .feature-bgimg .content .spare {
+	display: block;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 40px;
+	width: 550px;
+	float: left;
+	margin-left: 160px;
+}
+
 /*	===============================
 	Menu
 	=============================== */
@@ -228,17 +233,11 @@ header.bk-header {
 .menu-item-promoted {
 	background-color: darken(@color-swatch1,6%);
 	padding:20px!important;
-	-webkit-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	-moz-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
 }
 
 .menu-subsection-wrapper.menu-subsection-promoted {
 	background-color: darken(@color-swatch1,3%);
 	padding:40px;
-	-webkit-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	-moz-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
 }
 
 .main.wrapper {
@@ -268,9 +267,6 @@ header.bk-header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	-moz-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
     img {
         display: none;
         border: none;
@@ -290,9 +286,6 @@ input,
 .signupform fieldset input, 
 .widget.contactform form fieldset textarea, 
 .widget.contactform form fieldset input  {
-	-webkit-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	-moz-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
 	background-color:@color-swatch1;
 	border:1px solid darken(@color-swatch1,5%);
     text-indent:3px;
@@ -306,17 +299,11 @@ input,
 .blog-search-submit-button, 
 .widget.button button, button.btn {
 	background-color:@color-swatch3;
-	-webkit-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	-moz-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
 }
 
 .widget.paypalbuynow .widget.button.paypal, 
 .widget.tweet a, 
 .widget.dropbox button, .widget.socialicons span a {
-	-webkit-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	-moz-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
 	background-color:@color-swatch3;
 }
 
@@ -401,12 +388,6 @@ textarea.message {
 .twitter ul li a {
 	font-size: 14px;
 	font-weight: 300;
-}
-
-.widget.twitter .twitter-profile-pic img {
-	-webkit-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	-moz-box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
-	box-shadow: 2px 2px 0px 1px rgba(218,218,218,1);
 }
 
 /* ===============================
@@ -555,6 +536,10 @@ footer .widget.profile .bk-profile-socialicons span a {
 	text-align:center;
 }
 
+.footer-border h3 {
+	color:@font-swatch10-color;
+}
+
 .widgetfooter {
 	padding:80px 0px;
 	background-image: image('/images/header-texture.jpg');
@@ -675,10 +660,10 @@ footer .widget.profile .bk-profile-socialicons span a {
 		position: absolute;
 		width: 26px;
 		height: 3px;
-		background: #c7c7c7;
+		background: #c11b17;
 		top: 0;
 		right: 0;
-		box-shadow: 0 6px 0 #c7c7c7, 0 12px 0 #c7c7c7;
+		box-shadow: 0 6px 0 #c11b17, 0 12px 0 #c11b17;
 		margin: 0px auto;
 		display: table;
 		left: 0;
@@ -741,7 +726,20 @@ footer .widget.profile .bk-profile-socialicons span a {
 		margin:0px auto;
 		display:table;
 	}
-
+	.widget.feature .feature-bgimg .content .spare {
+		display: block;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 40px;
+		float: none;
+		margin-left:0;
+		margin:0px auto;
+		display:table;
+		width:80%;
+	}
+	#textwidgetbox1 .bk-content-text h3 {
+		font-size: bkscale(@font-swatch3-font-size, 0.7);
+        line-height: bkscale(@font-swatch3-line-height, 0.7);
+	}
 }	
 
 @media only screen and (max-width: 480px) {
@@ -806,5 +804,8 @@ footer .widget.profile .bk-profile-socialicons span a {
 	}
 	.blog-post-summary, .blog-post-more-link, time, .blog-post-content, .blog-post-category, .blog-post-tags {
 		padding:0px 20px;
+	}
+	.widget.feature .feature-bgimg .content {
+		height: 350px;
 	}
 }
