@@ -1,7 +1,7 @@
 {
-	"name":"ak-studio",
-	"thumbnail":"ak-studio.png",
-	"screenshot":"ak-studio.png",
+	"name":"saigonrestaurant",
+	"thumbnail":"saigonrestaurant.png",
+	"screenshot":"saigonrestaurant.png",
 	"templateType":"Standard Template",
         "pageTypes": [
         "home"
@@ -90,7 +90,7 @@
             "font-size": "16px",
             "font-weight": "300",
             "line-height": "30px",
-            "color": "@color-swatch3",
+            "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font5": {
