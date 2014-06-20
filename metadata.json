@@ -140,9 +140,9 @@
         },
         "font10": {
             "font-family": "\"Belleza\", \"Helvetica\", Arial, sans-serif",
-            "font-size": "28px",
+            "font-size": "34px",
             "font-weight": "700",
-            "line-height": "36px",
+            "line-height": "46px",
             "color": "@color-swatch1",
             "letter-spacing": "2px"
         }
